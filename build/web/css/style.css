@@ -1,0 +1,112 @@
+       * {
+           box-sizing: 0;
+           margin: 0;
+           padding: 0;
+           background-image: url('image/banner.jpg');
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-position: center;
+       }
+       
+       li,
+       a {
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           font-weight: 500;
+           font-size: 16px;
+           color: #edf0f1;
+           text-decoration: none;
+       }
+       
+       header {
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           padding: 30px 30px;
+           height: 30px;
+       }
+       
+       .logo {
+           cursor: pointer;
+           margin-right: auto;
+           font-size: 40px;
+           color: #edf0f1;
+       }
+       
+       .nav_links {
+           list-style: none;
+       }
+       
+       .nav_links li {
+           display: inline-block;
+           padding: 0px 20px;
+       }
+       
+       .nav_links li a {
+           transition: all 0.3s ease 0s;
+       }
+       
+       .nav_links li a:hover {
+           color: #0088a9
+       }
+       
+       form {
+           border: 5px solid #f1f1f1;
+           margin: 0 10%;
+           color: skyblue;
+       }
+       
+       input[type=text],
+       input[type=password],
+       select {
+           width: 100%;
+           padding: 16px 8px;
+           margin: 8px 0;
+           display: inline-block;
+           border: 1px solid #ccc;
+           box-sizing: border-box;
+       }
+       
+       .icon {
+           font-size: 110px;
+           display: flex;
+           justify-content: center;
+           color: #4286f4;
+       }
+       
+       .submit-btn {
+           background-color: orange;
+           color: skyblue;
+           font-size: 15px;
+           border-style: solid;
+           border-color: orange;
+           padding: 14px 0;
+           margin: 10px 0;
+           border: none;
+           cursor: grab;
+           width: 48%;
+       }
+       
+       h1 {
+           text-align: center;
+           font-size: 18;
+       }
+       
+       .submit-btn:hover {
+           opacity: 0.8;
+       }
+       
+       .formcontainer {
+           text-align: center;
+           margin: 24px 50px 12px;
+       }
+       
+       .container {
+           padding: 16px 0;
+           text-align: left;
+       }
+       
+       span.psw {
+           float: right;
+           padding-top: 0;
+           padding-right: 15px;
+       }

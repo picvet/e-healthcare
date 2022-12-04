@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+        * {
+            box-sizing: 0;
+            margin: 0;
+            padding: 0; 
+            background-color: #323232;
+            color: white; 
+        }
+        
+        li,
+        a {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 16px; 
+            text-decoration: none;
+        }
+        
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 30px;
+            height: 30px;
+        }
+        
+        .logo {
+            cursor: pointer;
+            margin-right: auto;
+            font-size: 40px;
+            color: #edf0f1;
+        }
+        
+        .nav_links {
+            list-style: none;
+        }
+        
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 20px; 
+        }
+        
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+        
+        /*end of navbar*/
+        
+        form {
+            border: 2px solid #555;
+            margin: 0 10%; 
+        }
+        
+        input[type=text],
+        input[type=password],
+        select {
+            width: 100%;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        } 
+        
+        .submit-btn { 
+            border: 2px solid #0099cc;
+            border-radius: 70px;
+            text-decoration: blink;
+            text-transform: uppercase;
+            border: solid;
+            border-color: silver;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 70px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: solid;
+            border-color: white;
+            color: white;
+            padding: 11px 31px;
+            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 18;
+        }
+         
+        label {
+            text-transform: uppercase;
+        }
+        
+        .formcontainer {
+            text-align: center;
+            margin: 24px 50px 12px;
+        }
+        
+        .container {
+            padding: 16px 0;
+            text-align: left;
+        }
+         
+    </style>
+        
+    </head>
+    <body>
+        <header>
+        <p class="logo">E-HEALTHCARE</p>
+        <nav>
+            <ul class="nav_links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+        
+        <form action="j_security_check" method="POST">
+       
+        
+        <div class="formcontainer">
+             <h1>ADMIN LOGIN</h1> 
+            <div class="container">
+
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" placeholder="Enter Username" name="j_username" required>
+
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" placeholder="Enter password" name="j_password" required>
+ 
+
+            </div>
+            <button class="submit-btn" type="submit"><strong>LOGIN</strong></button>
+    </form>
+        
+        
+    </body>
+</html>
